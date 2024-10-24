@@ -11,7 +11,8 @@ kwargs["install_requires"] = [
     "setuptools",
     "rdflib>=6.0",
     "importlib-metadata; python_version < '3.8.0'",
-] + (["plyvel"] if sys.platform == "linux" else ["plyvel-wheels"])
+] 
+# + (["plyvel"] if sys.platform == "linux" else ["plyvel-wheels"])
 
 kwargs["dependency_links"] = [
     "git+https://github.com/RDFLib/rdflib.git#egg=rdflib",
